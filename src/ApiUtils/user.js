@@ -18,8 +18,9 @@ export class UserFunctions{
     //Method for login the user
     async loginUser({email, password}){
         try {
+            console.log(email," ",password)
             const response = await axios.post(`${API_BASE_URL}/api/v1/user/login`,{email, password});
-
+            console.log("response",response)
             return response.data
         } catch (error) {
             console.log("ERROR while loging|| loginuser",error)
