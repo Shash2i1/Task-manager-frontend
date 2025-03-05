@@ -1,5 +1,7 @@
 import axios from "axios"
-const API_BASE_URL = "https://task-manager-backend-lizm.onrender.com"
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL
+console.log(API_BASE_URL)
+
 
 class TaskFunctions{
     //method to add Task
