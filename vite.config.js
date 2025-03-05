@@ -7,8 +7,7 @@ export default defineConfig({
     proxy: {
       '/api/v1': {
         target: 'https://task-manager-backend-0or0.onrender.com',
-        changeOrigin: true,
-        secure: false,
+        secure: false
       },
     }
   },
